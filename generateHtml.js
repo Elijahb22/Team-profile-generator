@@ -13,7 +13,7 @@ function writePage (html) {
 }
 
 const copyCSS = () =>{
-    fs.copyFile('./src/style.css', './dist/style.css', err => {
+    fs.copyFile('./dist/style.css', err => {
         if (err){
             throw err
         }
