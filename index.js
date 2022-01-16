@@ -46,7 +46,7 @@ function userInfo() {
             type: 'list',
             message: 'Select Role: ',
             name: 'role',
-            choices: ["Manager", "Engineer", "Intern"]
+            choices: ["Manager", "Engineer","Employee", "Intern"]
     
         },
     ])
