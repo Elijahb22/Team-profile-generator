@@ -23,3 +23,11 @@ const manager= require ('../lib/Manager');
         const managerTest = new manager('Elijah', 'Elijahbusick@gmail.com', 4 , 'manager', 109);
         expect(managerTest.role).toBe('manager')
     });
+
+    it('has a office number', () => {
+        const managerTest = new manager('Elijah', 'Elijahbusick@gmail.com', 4 , 'manager', 109);
+        keys = Object.keys(managerTest)
+        optionKey = keys[4]
+        expect(optionKey).toBe('office')
+        expect(managerTest.office).toEqual(expect.any(Number))
+    })
